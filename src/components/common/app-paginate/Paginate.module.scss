@@ -1,0 +1,34 @@
+.Component {
+  @apply flex items-center flex-wrap gap-4 m-0 p-0 text-text-primary;
+
+  li {
+    // min-width: 1.5625rem;
+    // min-height: 1.5625rem;
+    border-radius: 0.1875rem;
+
+    list-style: none;
+
+    // &:not(.Break) {
+    //   @apply border border-solid border-stroke;
+    // }
+
+    &:first-child,
+    &:last-child {
+      a {
+        @apply p-0 aspect-auto;
+      }
+    }
+
+    a {
+      @apply flex items-center justify-center w-full h-full text-body/small/regular min-h-[1.5625rem] p-0 font-light;
+    }
+  }
+
+  .Active {
+    @apply bg-secondary text-dark-background;
+
+    a {
+      @apply px-[0.4375rem] min-w-[1.5625rem];
+    }
+  }
+}

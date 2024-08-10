@@ -1,0 +1,8 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "conventionalCommits.scopes": [
+    "base"
+  ]
+}

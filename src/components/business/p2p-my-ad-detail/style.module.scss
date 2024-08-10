@@ -1,0 +1,15 @@
+.List {
+  @apply flex flex-col gap-3 text-right md:flex-row md:gap-6 md:text-start;
+
+  span {
+    &:not(:last-child) {
+      position: relative;
+
+      &:after {
+        @apply bg-text-placeholder absolute top-0 right-[-0.75rem] w-px h-full hidden md:block;
+
+        content: '';
+      }
+    }
+  }
+}
